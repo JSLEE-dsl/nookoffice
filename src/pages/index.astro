@@ -12,15 +12,7 @@ import "./index.css";
 	<main>
 		<div class="video-feed">
 			<div class="img-wrapper">
-					let feedIndex = 1;
-	function refreshGIF() {
-		var feed = document.getElementById("feed");
-		if (feed) {
-			feedIndex = (feedIndex % 6) + 1;
-			feed.setAttribute("src", `./video-feed/bg_${feedIndex}.gif`);
-		}
-	}
-
+				<img class="feed-img" id="feed" src="./video-feed/bg_1.gif" />
 				<div class="dates">
 					<p id="locale-date"></p>
 					<p id="locale-time"></p>
