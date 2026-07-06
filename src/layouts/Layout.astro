@@ -101,11 +101,7 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 	}
 	body {
-		background-color: #f6f6f6;
-		background-image: url("/nookoffice/animalcrossing_pattern.jpg");
-		background-repeat: repeat-x;
-		background-position: center;
-		background-size: cover;
+		background-color: #0d0d0d;
 
 		width: 100vw;
 		height: 100vh;
@@ -113,6 +109,19 @@ const { title } = Astro.props;
 
 		margin: 0;
 		padding: 0;
+	}
+	body::before {
+		content: "";
+		position: fixed;
+		top: -60%;
+		left: -60%;
+		width: 220%;
+		height: 220%;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='340' height='140'%3E%3Ctext x='15' y='45' font-family='Arial,Helvetica,sans-serif' font-size='20' font-weight='bold' fill='%23ff3b3b' fill-opacity='0.22'%3EData Science LAB%3C/text%3E%3Ctext x='170' y='110' font-family='Arial,Helvetica,sans-serif' font-size='20' font-weight='bold' fill='%23ff3b3b' fill-opacity='0.22'%3EData Science LAB%3C/text%3E%3C/svg%3E");
+		background-repeat: repeat;
+		transform: rotate(-30deg);
+		z-index: -1;
+		pointer-events: none;
 	}
 
 	@font-face {

@@ -7,7 +7,9 @@
 	margin-top: 10px;
 	width: calc(100% - 2rem);
 	padding: 1rem;
-	background-color: #5baaab;
+	background: linear-gradient(135deg, #1a1a1a 0%, #3a0c0c 18%, #7d1212 42%, #c62828 50%, #7d1212 58%, #2a0808 82%, #0d0d0d 100%);
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.18), inset 0 -2px 6px rgba(0, 0, 0, 0.5);
+	border: 1px solid #000;
 	border-radius: 25px;
 }
 
@@ -79,7 +81,7 @@ input[type="range"]::-webkit-slider-thumb {
 	/* Centers thumb on the track */
 
 	/*custom styles*/
-	background-color: #5baaab;
+	background-color: #c62828;
 	height: 1.5rem;
 	width: 1.5rem;
 	border: 3px solid #fffdf2;
@@ -108,7 +110,7 @@ input[type="range"]::-moz-range-thumb {
 	/*Removes default border-radius that FF applies*/
 
 	/*custom styles*/
-	background-color: #5cd5eb;
+	background-color: #c62828;
 	height: 2rem;
 	width: 1rem;
 }
