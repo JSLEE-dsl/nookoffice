@@ -18,7 +18,7 @@ export default defineConfig({
 			noExternal: ["astro", "@astrojs/image"],
 		},
 	},
-	site: 'https://vijiatjack.github.io',
+	site: 'https://JSLEE-dsl.github.io',
   	base: '/nookoffice'
 });
 
