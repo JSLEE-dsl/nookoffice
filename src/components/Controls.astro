@@ -49,16 +49,15 @@ import "./controls.css";
 			feedback.innerHTML = "Paused";
 		}
 	}
+		let feedIndex = 1;
 	function refreshGIF() {
 		var feed = document.getElementById("feed");
-
 		if (feed) {
-			feed.setAttribute(
-				"src",
-				`./video-feed/bg_${parseInt(Math.random() * (8 - 1) + 1)}.gif`
-			);
+			feedIndex = (feedIndex % 6) + 1;
+			feed.setAttribute("src", `./video-feed/bg_${feedIndex}.gif`);
 		}
 	}
+
 
 	function layerRain() {
 		rainPlayer.load("q76bMs-NwRk", true);
